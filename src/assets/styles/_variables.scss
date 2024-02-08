@@ -1,0 +1,45 @@
+// Customize Bootstrap variables
+// colors
+$orange: #EB9157;
+$green: #8B9E67;
+$pink: #EEEAE4;
+
+// theme color variables
+$primary: $orange;
+$secondary: $green;
+$dark: #333333;
+$light: #F2F2F2;
+
+
+
+// typography
+$body-color: $dark;
+$font-family-base: 'Poppins', sans-serif;
+
+// spacers
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer * .75,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 4,
+  7: $spacer * 6,
+  8: $spacer * 8
+);
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// add theme colors
+$custom-colors: (
+  "beige": $pink,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

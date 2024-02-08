@@ -1,0 +1,18 @@
+// Buttons
+.btn {
+  --bs-btn-padding-x: 1.8em;
+  --bs-btn-padding-y: .9em;
+  --bs-btn-font-size: 17px;
+  --bs-btn-font-weight: 600;
+  --bs-border-radius: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+  --bs-btn-color: #fff;
+}
+
+.btn.btn-icon {
+  --bs-btn-padding-x: .5em;
+  --bs-btn-padding-y: .5em;
+}
